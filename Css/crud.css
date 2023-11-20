@@ -1,0 +1,16 @@
+/* Agregamos algunos estilos básicos, puedes personalizar según tus preferencias */
+
+.table th, .table td {
+    text-align: center;
+  }
+  
+  .btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+  }
+  

@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: white;
+    color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #d2e9ff;
+  }
+
+  .btn-regresar {
+    background-color: #28a745; /* Color verde */
+    color: white;
+    padding: 10px 20px; /* Ajusta el espaciado interno según sea necesario */
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto; /* Centra el botón */
+  }
+
+  .btn-regresar:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el ratón */
+  }

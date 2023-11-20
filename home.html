@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Home</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .frase-container {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #4CAF50;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .frase-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5 text-center">
+    <h2>¡Welcome to lobby!</h2>
+   
+    <div class="row mt-4">
+      <div class="col-sm-6 col-md-3">
+        <a class="btn btn-primary btn-lg btn-block animate__animated animate__fadeInLeft" href="login.html">Login</a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a class="btn btn-warning btn-lg btn-block animate__animated animate__fadeInUp" href="index.html"> Cocktails</a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a class="btn btn-success btn-lg btn-block animate__animated animate__fadeInRight" href="Curiosidades.html">Q&A</a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <button class="btn btn-danger btn-lg btn-block animate__animated animate__fadeInDown" onclick="mostrarFraseDelDia()">Frase del día</button>
+      </div>
+    </div>
+
+    <div id="fraseDelDiaContainer" class="frase-container">
+      <p id="fraseText" class="frase-text"></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const frasesMotivadoras = [
+      "La perseverancia es la clave del éxito.",
+      "Cada día es una nueva oportunidad para ser mejor.",
+      "El único modo de hacer un gran trabajo es amar lo que haces.",
+      "El éxito es aprender a ir de fracaso en fracaso sin desesperarse.",
+      "No te preocupes por los fracasos, preocúpate por las oportunidades que pierdes cuando ni siquiera lo intentas.",
+      "Tu tiempo es limitado, no lo desperdicies viviendo la vida de alguien más."
+    ];
+
+    function mostrarFraseDelDia() {
+      const fraseContainer = document.getElementById('fraseDelDiaContainer');
+      const fraseText = document.getElementById('fraseText');
+      const fraseAleatoria = obtenerFraseAleatoria();
+      fraseText.textContent = fraseAleatoria;
+      fraseContainer.style.display = 'block';
+    }
+
+    function obtenerFraseAleatoria() {
+      const indiceAleatorio = Math.floor(Math.random() * frasesMotivadoras.length);
+      return frasesMotivadoras[indiceAleatorio];
+    }
+  </script>
+</body>
+</html>
+  

@@ -1,0 +1,17 @@
+{
+    "name" : "Practica 1 PWA",
+    "shortname" : "P1_PWA",
+    "theme_color": "#3367D6",
+    "background_color": "#3367D6",
+    "start_url" : "/P_Final/splash.html",
+    "display" : "Standalone",
+    "scope" : ".",
+    "description" : "Esta es mi primer PWA",
+    "icons": [
+        {
+          "src": "./Images/icon512.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+    ]
+}

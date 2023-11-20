@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CRUD de Curiosidades de Cócteles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/crud.css"> <!-- Nuevo archivo para los estilos -->
+  <link rel="manifest" href="manifest.json">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Cocktail-Api</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="indexA.html">Curiosidades</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="cerrar_sesion.php"><span class="glyphicon glyphicon-log-in"></span>Cerrar sesión</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h2>Curiosidades de Cócteles</h2>
+  
+  <form id="curiosityForm">
+    <div class="form-group">
+      <label for="cocktailName">Nombre del cóctel:</label>
+      <input type="text" class="form-control" id="cocktailName" name="cocktailName" required>
+    </div>
+    <div class="form-group">
+      <label for="creationYear">Año en el que se creó:</label>
+      <input type="date" class="form-control" id="creationYear" name="creationYear" required>
+    </div>
+    <div class="form-group">
+      <label for="cocktailCuriosity">Curiosidades del cóctel:</label>
+      <textarea class="form-control" id="cocktailCuriosity" name="cocktailCuriosity" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar Curiosidad</button>
+  </form>
+  
+  <h3>Curiosidades:</h3>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Nombre del cóctel</th>
+        <th>Año</th>
+        <th>Curiosidades</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="curiosityList"></tbody>
+  </table>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./Javascript/crud.js"></script>
+</html>

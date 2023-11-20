@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coctel-API</title>
+    <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    
+</head> 
+<body>
+  <h1>Coctel-API</h1>
+  <div class="card">
+    <button id="notificaciones">Activar Notificaciones</button><br>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar cóctel">
+      <button id="searchButton">Buscar</button>
+    </div>
+    <img src="" alt="Cóctel" id="cocktailImage">
+    <div id="cocktailDetails"></div>
+    <button onclick="getRandomCocktail()">Buscar Cóctel De Manera Aleatoria</button><br>
+    <a type="button" href="./home.html">Regresar al inicio</a>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./Javascript/indexU.js"></script>
+
+
+</html>
